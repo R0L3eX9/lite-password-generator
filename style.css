@@ -133,13 +133,3 @@ footer {
         margin-top: 0.01em;
     }
 }
-
-@media only screen and (min-width: 360px) {
-    main {
-        width: 100%;
-        background-color: black;
-    }
-    .password-container {
-        width: 100%;
-    }
-}
