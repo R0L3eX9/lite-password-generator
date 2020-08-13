@@ -1,7 +1,7 @@
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -105,4 +105,41 @@ footer {
 .icon {
     width: 2rem;
     margin-left: 1rem;
+}
+
+@media only screen and (max-width: 360px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .main {
+        width: 75%;
+        left: 15%;
+    }
+
+    .password-container {
+        width: 100%;
+        height: 60%;
+    }
+
+    #generated-password {
+        font-size: 1.3rem;
+        margin-top: 0.01em;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    main {
+        width: 100%;
+        background-color: black;
+    }
+    .password-container {
+        width: 100%;
+    }
 }
