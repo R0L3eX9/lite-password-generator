@@ -133,3 +133,17 @@ footer {
         margin-top: 0.01em;
     }
 }
+
+@media only screen and (max-width: 1600px) and (min-width: 400px) {
+    #generated-password {
+        width: 100%;
+        font-size: 1.5rem;
+        
+    }
+
+    .main {
+        width: 90%;
+        left: 7%;
+    }
+
+}
