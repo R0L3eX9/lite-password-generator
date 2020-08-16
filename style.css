@@ -168,4 +168,7 @@ footer {
     .icon {
         margin-top: 0.2rem;
     }
+    footer p {
+        margin-top: 0.2rem;
+    }
 }
