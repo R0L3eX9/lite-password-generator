@@ -8,6 +8,25 @@ html {
     height: 100%;
 }
 
+header {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    font-size: 2rem;
+    top: 0;
+    background-color: #1C66BD;
+}
+
+nav {
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    height: auto;
+}
+
 body {
     min-height: 100%;
     position: relative;
@@ -21,43 +40,50 @@ body::after {
     height: 100px;
 }
 
-header {
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    height: 7%;
+
+.flex-center {
     display: flex;
-    font-size: 2.4rem;
-    top: 0;
     justify-content: center;
-    align-items: center;
-    background-color: #1C66BD;
+    align-content: center;
 }
 
-/*Mid section*/
-
+/* Made the main div cover the remaining window*/
 .main {
     color: #fff;
+    top: 7%;
     position: absolute;
-    top: 35%;
-    left: 25%;
-    width: 50%;
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
+
+.container {
+    min-width: 50%;
+}
+
+/* <Passowrd>  */
 
 .password-container {
     background-color: #fff;
-    color: #31393C;
-    border-radius: 5px;
-    width: 55%;
+    color: #333;
+    width: 42%;
     margin: 0 auto;
-    height: 5.5rem;
+    height: 5rem;
+    border-radius: 10px;
 }
 
 #generated-password {
-    padding-top: 0.34em;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding-top: 4%;
 }
+
+/* </Passowrd>  */
+
+/* <Button> */
 
 .btns {
     display: flex;
@@ -70,22 +96,29 @@ header {
 .btn {
     color: #fff;
     background-color: #33A1FD;
-    width: 12rem;
-    font-size: 2rem;
-    height: 5rem;
-    margin-top: 2rem;
     border: none;
+    height: 5rem;
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
     border-radius: 10px;
     cursor: pointer;
 }
 
+.btn-rep {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
 .btn:hover {
-    background-color: #1a8fee;
+    background-color: #4ca4ec;
 }
 
 .btn:active {
     scale: 0.98;
 }
+
+/* </Button> */
 
 /* Bottom */
 
@@ -104,10 +137,11 @@ footer {
 
 .icon {
     width: 2rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-height: 768px) {
 
     html,
     body {
@@ -116,34 +150,6 @@ footer {
 
     body {
         position: relative;
-    }
-
-    .main {
-        width: 75%;
-        left: 15%;
-    }
-
-    .password-container {
-        width: 100%;
-        height: 60%;
-    }
-
-    #generated-password {
-        font-size: 1.3rem;
-        margin-top: 0.01em;
-    }
-}
-
-@media only screen and (max-width: 1600px) and (min-width: 400px) {
-    #generated-password {
-        width: 100%;
-        font-size: 1.5rem;
-        
-    }
-
-    .main {
-        width: 90%;
-        left: 7%;
     }
 
 }
