@@ -65,19 +65,22 @@ body::after {
 }
 
 /* <Passowrd>  */
+/*
+TODO Make it responsiv
 
+*/
 .password-container {
     background-color: #fff;
     color: #333;
-    width: 42%;
+    width: 46%;
     margin: 0 auto;
-    height: 5rem;
+    height: 5.5rem;
     border-radius: 10px;
 }
 
 #generated-password {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 4%;
 }
 
@@ -141,15 +144,3 @@ footer {
     margin-left: 1rem;
 }
 
-@media only screen and (max-height: 768px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    body {
-        position: relative;
-    }
-
-}
