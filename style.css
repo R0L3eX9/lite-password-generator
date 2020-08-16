@@ -164,4 +164,8 @@ footer {
         margin-top: 5%;
         font-size: 1.3rem;
     }
+
+    .icon {
+        margin-top: 0.2rem;
+    }
 }
