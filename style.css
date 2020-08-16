@@ -1,6 +1,5 @@
 /*
 TODO Make it responsiv
-TODO Fix the title [Make it be the same as the nav]
 */
 
 
@@ -166,9 +165,9 @@ footer {
     }
 
     .icon {
-        margin-top: 0.2rem;
+        margin-top: 0.45rem;
     }
     footer p {
-        margin-top: 0.2rem;
+        margin-top: 0.45rem;
     }
 }
