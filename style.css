@@ -12,7 +12,7 @@ header {
     color: #fff;
     position: absolute;
     width: 100%;
-    height: 7%;
+    min-height: 7%;
     font-size: 2rem;
     top: 0;
     background-color: #1C66BD;
@@ -56,6 +56,7 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
     width: 100%;
 
 }
@@ -145,9 +146,20 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
     .main {
         width: 100%;
     }
+
     .container {
         min-width: 100%;
         display: inline;
