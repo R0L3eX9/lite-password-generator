@@ -11,7 +11,9 @@ TODO Make it responsiv
 
 html {
     height: 100%;
+    overflow: hidden;
 }
+
 
 header {
     color: #fff;
@@ -61,7 +63,7 @@ body::after {
 }
 
 .container {
-    min-width: 50%;
+    min-width: 100%;
 }
 
 /* <Passowrd>  */
@@ -69,7 +71,7 @@ body::after {
 .password-container {
     background-color: #fff;
     color: #333;
-    width: 46%;
+    width: 27%;
     margin: 0 auto;
     height: 5.5rem;
     border-radius: 10px;
@@ -77,8 +79,8 @@ body::after {
 
 #generated-password {
     text-align: center;
-    font-size: 2.5rem;
-    padding-top: 4%;
+    font-size: 2.1vw;
+    margin: 1rem 0.3rem 0rem 0.3rem;
 }
 
 /* </Passowrd>  */
@@ -138,6 +140,16 @@ footer {
     margin-left: 1rem;
 }
 
+.icon {
+    margin-top: 0.8rem;
+}
+
+footer p {
+    margin-top: 0.8rem;
+}
+
+
+
 @media only screen and (max-width: 640px) {
 
     html,
@@ -145,18 +157,13 @@ footer {
         overflow-x: hidden;
     }
 
-    body {
-        position: relative;
-    }
-
     .main {
-        width: 100%;
+        min-width: 100%;
         position: fixed;
     }
 
     .container {
-        min-width: 100%;
-        display: inline;
+        width: 100%;
     }
 
     #generated-password {
@@ -165,9 +172,10 @@ footer {
     }
 
     .icon {
-        margin-top: 0.45rem;
+        margin-top: 0.4rem;
     }
+
     footer p {
-        margin-top: 0.45rem;
+        margin-top: 0.4rem;
     }
 }
