@@ -23,6 +23,7 @@ header {
     font-size: 2rem;
     top: 0;
     background-color: #1C66BD;
+    box-shadow: 0px 2px 5px black;
 }
 
 h1 {
@@ -71,16 +72,17 @@ body::after {
 .password-container {
     background-color: #fff;
     color: #333;
-    width: 27%;
+    width: 25vw;
     margin: 0 auto;
     height: 5.5rem;
     border-radius: 10px;
+    box-shadow: 6px 5px #333;
 }
 
 #generated-password {
     text-align: center;
-    font-size: 2.1vw;
-    margin: 1rem 0.3rem 0rem 0.3rem;
+    font-size: 2.3vw;
+    margin: 1vw 0.3rem 0rem 0.3rem;
 }
 
 /* </Passowrd>  */
@@ -105,6 +107,7 @@ body::after {
     padding-right: 1em;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 4px 4px #0239af;
 }
 
 .btn-rep {
@@ -132,6 +135,7 @@ footer {
     height: 6%;
     bottom: 0;
     font-size: 1.25rem;
+    box-shadow: 10px 0px 5px black;
 }
 
 .icon {
@@ -164,6 +168,11 @@ footer p {
 
     .container {
         width: 100%;
+    }
+
+    .password-container {
+        min-width: 60vw;
+        height: 8vh;
     }
 
     #generated-password {
