@@ -82,7 +82,7 @@ body::after {
 #generated-password {
     text-align: center;
     font-size: 2.3vw;
-    margin: 1vw 0.3rem 0rem 0.3rem;
+    margin: 1rem 0.3rem 0rem 0.3rem;
 }
 
 /* </Passowrd>  */
@@ -176,7 +176,7 @@ footer p {
     }
 
     #generated-password {
-        margin-top: 5%;
+        margin-top: 4%;
         font-size: 1.3rem;
     }
 
@@ -186,5 +186,23 @@ footer p {
 
     footer p {
         margin-top: 0.4rem;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1200px) {
+    .password-container {
+        width: 50vw;
+    }
+
+    #generated-password {
+        font-size: 2rem;
+        margin-top: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1530px) {
+    #generated-password {
+        font-size: 1.7rem;
+        margin-top: 0.7em;
     }
 }
