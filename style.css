@@ -98,6 +98,7 @@ body::after {
 }
 
 .btn {
+    outline: none;
     color: #fff;
     background-color: #33A1FD;
     border: none;

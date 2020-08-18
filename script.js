@@ -2,26 +2,24 @@ const generateBtn = document.getElementById('generate');
 const copyBtn = document.getElementById('copy');
 const password = document.getElementById('generated-password');
 
-let newpassword = "";
+let newPassword = "";
 
 function generatePassword() {
-    newpassword = ""
-    let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*';
+    newPassword = ""
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*';
     for (let i = 0; i < 16; i++) {
-        newpassword += letters.charAt(Math.floor(Math.random() * letters.length));
+        newPassword += letters.charAt(Math.floor(Math.random() * letters.length));
     }
-    password.innerHTML = newpassword;
-    return newpassword;
+    password.innerText = newPassword;
+    return newPassword;
 }
 
-password.innerHTML = generatePassword()
+password.innerText = generatePassword()
 
 generateBtn.addEventListener('click', () => {
     generatePassword();
 })
 
-console.log(copyBtn)
-
 copyBtn.addEventListener('click', () => {
-    window.navigator.clipboard.writeText(password.innerHTML);
+    window.navigator.clipboard.writeText(password.innerText);
 })
